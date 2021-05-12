@@ -29,6 +29,7 @@ class UpdateTestRequest extends FormRequest
     {
         return [
             'test'=>'nullable',
+            'username'=>'nullable',
         ];
     }
 

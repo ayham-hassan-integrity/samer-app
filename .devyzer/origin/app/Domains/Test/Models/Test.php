@@ -34,7 +34,7 @@ class Test extends Model
     *
     * @var array
     */
-    protected $fillable = [         "test",    ];
+    protected $fillable = [         "test",        "username",    ];
 
     /**
      * The attributes that should be hidden for arrays.

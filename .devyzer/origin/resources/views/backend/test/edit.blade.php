@@ -22,6 +22,14 @@
                     </div>
 
                 </div><!--form-group-->
+                <div class="form-group row">
+                    <label for="username" class="col-md-2 col-form-label">@lang('username')</label>
+
+                    <div class="col-md-10">
+                        <input type="text" name="username" class="form-control" placeholder="{{  __('username') }} " value="{{   $test->title }}  "  />
+                    </div>
+
+                </div><!--form-group-->
             </x-slot>
 
             <x-slot name="footer">

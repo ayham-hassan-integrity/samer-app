@@ -32,3 +32,19 @@ Route::group([
         Route::delete('/', [TestController::class, 'delete'])->name('destroy');
     });
 });
+
+use App\Domains\Test\Http\Controllers\Api\Test\TestController;
+
+Route::group([
+    'prefix' => 'test',
+    'as' => 'test.',
+], function () {
+
+    Route::get('/', [TestController::class, 'index'])->name('index');
+    Route::post('/', [TestController::class, 'store'])->name('store');
+    Route::group(['prefix' => '{project}'], function () {
+        Route::get('/', [TestController::class, 'show'])->name('show');
+        Route::put('/', [TestController::class, 'update'])->name('update');
+        Route::delete('/', [TestController::class, 'delete'])->name('destroy');
+    });
+});

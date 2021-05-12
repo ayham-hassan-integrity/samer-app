@@ -37,6 +37,7 @@ class TestService extends BaseService
         try {
             $test = $this->model::create([
                 'test' => $data['test'],
+                'username' => $data['username'],
             ]);
         } catch (Exception $e) {
             DB::rollBack();
@@ -63,6 +64,7 @@ class TestService extends BaseService
         try {
             $test->update([
                 'test' => $data['test'],
+                'username' => $data['username'],
             ]);
         } catch (Exception $e) {
             DB::rollBack();

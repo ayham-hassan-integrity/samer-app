@@ -13,6 +13,7 @@ use App\Domains\Auth\Services\RoleService;
 /**
  * Class RoleController.
  */
+ /** @OA\Info(title="samer-app API", version="0.1") */
 class RoleController
 {
     /**
