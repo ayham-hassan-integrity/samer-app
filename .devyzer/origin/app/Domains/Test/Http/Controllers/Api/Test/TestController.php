@@ -24,6 +24,8 @@ class TestController extends Controller
      *    @OA\JsonContent(
      *     @OA\Items(
      *       @OA\Property(property="test", type="string", example="1"),
+     *       @OA\Property(property="id", type="increments", example="1"),
+     *       @OA\Property(property="username", type="string", example="1"),
      *       @OA\Property(property="deleted_at", type="string", example="null"),
      *       @OA\Property(property="created_at", type="string", example="2021-03-10T09:03:27.000000Z"),
      *       @OA\Property(property="updated_at", type="string", example="2021-03-10T09:03:27.000000Z"),
@@ -65,6 +67,8 @@ class TestController extends Controller
      *    description="Returns when Test is found",
      *    @OA\JsonContent(
      *       @OA\Property(property="test", type="string", example="1"),
+     *       @OA\Property(property="id", type="increments", example="1"),
+     *       @OA\Property(property="username", type="string", example="1"),
      *       @OA\Property(property="deleted_at", type="string", example="null"),
      *       @OA\Property(property="created_at", type="string", example="2021-03-10T09:03:27.000000Z"),
      *       @OA\Property(property="updated_at", type="string", example="2021-03-10T09:03:27.000000Z"),
@@ -91,6 +95,8 @@ class TestController extends Controller
      *    @OA\JsonContent(
      *       required={"name"},
      *       @OA\Property(property="test", type="string", example="1"),
+     *       @OA\Property(property="id", type="increments", example="1"),
+     *       @OA\Property(property="username", type="string", example="1"),
      *    ),
      * ),
      * @OA\Response(
@@ -106,6 +112,8 @@ class TestController extends Controller
      *    @OA\JsonContent(
      *     @OA\Items(
      *       @OA\Property(property="test", type="string", example="1"),
+     *       @OA\Property(property="id", type="increments", example="1"),
+     *       @OA\Property(property="username", type="string", example="1"),
      *       @OA\Property(property="created_at", type="string", example="2021-03-10T09:03:27.000000Z"),
      *       @OA\Property(property="updated_at", type="string", example="2021-03-10T09:03:27.000000Z"),
      *    )
@@ -139,6 +147,8 @@ class TestController extends Controller
      *    description="Test fields",
      *    @OA\JsonContent(
      *       @OA\Property(property="test", type="string", example="1"),
+     *       @OA\Property(property="id", type="increments", example="1"),
+     *       @OA\Property(property="username", type="string", example="1"),
      *    ),
      * ),
      * @OA\Response(
@@ -147,6 +157,8 @@ class TestController extends Controller
      *    @OA\JsonContent(
      *     @OA\Items(
      *       @OA\Property(property="test", type="string", example="1"),
+     *       @OA\Property(property="id", type="increments", example="1"),
+     *       @OA\Property(property="username", type="string", example="1"),
      *       @OA\Property(property="created_at", type="string", example="2021-03-10T09:03:27.000000Z"),
      *       @OA\Property(property="updated_at", type="string", example="2021-03-10T09:04:27.000000Z"),
      *    )
@@ -188,6 +200,8 @@ class TestController extends Controller
      *    description="Returns when Tests are found",
      *    @OA\JsonContent(
      *       @OA\Property(property="test", type="string", example="1"),
+     *       @OA\Property(property="id", type="increments", example="1"),
+     *       @OA\Property(property="username", type="string", example="1"),
      *       @OA\Property(property="deleted_at", type="string", example="2021-03-10T15:47:13.000000Z"),
      *       @OA\Property(property="created_at", type="string", example="2021-03-10T09:03:27.000000Z"),
      *       @OA\Property(property="updated_at", type="string", example="2021-03-10T09:03:27.000000Z"),

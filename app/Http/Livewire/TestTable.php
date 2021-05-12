@@ -52,6 +52,10 @@ class TestTable extends TableComponent
         return [
             Column::make(__('test'), 'test')
 ,
+            Column::make(__('id'), 'id')
+,
+            Column::make(__('username'), 'username')
+,
 
             Column::make(__('Actions'))
                 ->format(function (Test $model) {

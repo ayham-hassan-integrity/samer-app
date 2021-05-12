@@ -18,6 +18,14 @@
                     <th>@lang('test')</th>
                     <td>{{   $test->test }}</td>
                 </tr>
+                <tr>
+                    <th>@lang('id')</th>
+                    <td>{{   $test->id }}</td>
+                </tr>
+                <tr>
+                    <th>@lang('username')</th>
+                    <td>{{   $test->username }}</td>
+                </tr>
             </table>
         </x-slot>
 

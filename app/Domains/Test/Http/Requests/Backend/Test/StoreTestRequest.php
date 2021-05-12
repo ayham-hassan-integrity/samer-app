@@ -28,6 +28,7 @@ class StoreTestRequest extends FormRequest
     {
         return [
             'test'=>'nullable',
+            'username'=>'nullable',
         ];
     }
 
